@@ -16,3 +16,7 @@ hooks:
     - location: cicd/afterInstall.sh
       timeout: 600
       runas: ubuntu
+  ApplicationStart:
+    - location: cicd/startApp.sh
+      timout: 300
+      runas: ubuntu
