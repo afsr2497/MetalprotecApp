@@ -1,1 +1,1 @@
-sudo echo "Alexander Segovia"
+sudo rm -rf /home/ubuntu/MetalprotecApp/*

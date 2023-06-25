@@ -10,5 +10,9 @@ permissions:
 hooks:
   BeforeInstall:
     - location: cicd/beforeInstall.sh
-      timeout: 300
+      timeout: 600
+      runas: ubuntu
+  AfterInstall:
+    - location: cicd/afterInstall.sh
+      timeout: 600
       runas: ubuntu
