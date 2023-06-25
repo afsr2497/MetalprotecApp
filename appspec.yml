@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/MetalprotecApp
+permissions:
+  - object: /home/ubuntu/MetalprotecApp
+    owner: ubuntu
+    group: ubuntu
+hooks:
+  BeforeInstall:
+    - location: cicd/beforeInstall.sh
+      timeout: 300
+      runas: ubuntu
